@@ -1,1 +1,22 @@
+/* Your CSS code goes here */
+/* style.css */
+
+/* Your CSS code goes here */
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%; 
+  text-align: center; 
+  background-color: lightblue; 
+}
+
+h1 {
+  margin: 0; 
+  color: navy;
+}
+
 
