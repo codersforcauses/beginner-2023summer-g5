@@ -1,22 +1,78 @@
-/* Your CSS code goes here */
-/* style.css */
-
-/* Your CSS code goes here */
-/* style.css */
 body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500vh;
   margin: 0;
-  padding: 0;
+  background-color: #93a7e6;
 }
 
-header {
-  width: 100%; 
-  text-align: center; 
-  background-color: lightblue; 
+.game-header {
+  margin-top: 20px; 
 }
 
-h1 {
-  margin: 0; 
-  color: navy;
+.game-header h1 {
+  text-align: center;
+  color: #333;
 }
+
+.ew-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  width: 80%; 
+  width: 16rem; 
+  height: 10rem; 
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #efeaea;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slots-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: static;
+  margin-top: 280px;
+}
+
+.slot {
+  width: 50px; 
+  height: 50px;
+  margin: 0 5px;
+  background-color: #ccc; 
+  background-image: #ccc; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+
+.ew-box-item {
+  width: 50px;
+  height: 50px;
+  background-color: #0a0606;
+  border: 1px solid #111111;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px; 
+  position: static;
+
+}
+
+
+.ew-box-item, .slot {
+  transition: transform 0.2s ease-in-out;
+}
+
+.ew-box-item:hover, .slot:hover {
+  transform: scale(1.1);
+}
+
+
 
 
