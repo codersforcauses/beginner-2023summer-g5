@@ -1,72 +1,78 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+body {
+  font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  height: 500vh;
+  margin: 0;
+  background-color: #93a7e6;
 }
 
 .game-header {
-  text-align: center;
-  margin: 20px 0;
+  margin-top: 20px; 
 }
 
-.game-container {
-  position: relative;
+.game-header h1 {
+  text-align: center;
+  color: #333;
+}
+
+.ew-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: auto;
+  align-items: center; 
+  justify-content: center; 
+  width: 80%; 
+  width: 16rem; 
+  height: 10rem; 
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #efeaea;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  position: relative;
 }
 
-.layer {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-template-rows: repeat(3, 50px);
-  grid-gap: 10px;
-  margin: 20px 0;
-}
-
-.card {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: grab;
-  transition: transform 0.5s ease; /* 平滑过渡 */
-}
-
-.card:active {
-  cursor: grabbing;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-#slots {
+.slots-container {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   position: static;
-  margin-top: 220px;
+  margin-top: 280px;
 }
 
 .slot {
-  width: 50px;
+  width: 50px; 
   height: 50px;
-  border: 1px solid #000;
-  background-color: #0bc020;
   margin: 0 5px;
-  display: inline-block;
+  background-color: #ccc; 
+  background-image: #ccc; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
-.slot:hover {
-  border-color: #ffcc00;
+
+.ew-box-item {
+  width: 50px;
+  height: 50px;
+  background-color: #0a0606;
+  border: 1px solid #111111;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px; 
+  position: static;
+
 }
+
+
+.ew-box-item, .slot {
+  transition: transform 0.2s ease-in-out;
+}
+
+.ew-box-item:hover, .slot:hover {
+  transform: scale(1.1);
+}
+
 
 
 
